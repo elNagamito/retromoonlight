@@ -41,6 +41,11 @@ make
 sudo make install
 sudo ldconfig
 
+curl -1sLf 'https://dl.cloudsmith.io/public/moonlight-game-streaming/moonlight-embedded/setup.deb.sh' | distro=raspbian codename=buster sudo -E bash
+sudo apt install moonlight-embedded
+sudo apt update
+sudo apt upgrade
+
 cd retromoonlight
 
 echo -e "\nMoonlight Installed!"
